@@ -13,9 +13,10 @@ import starbuzzcoffee.Beverages.beverage;
  */
 public class darkRoast extends beverage{
 
-    public darkRoast(String description) {
-        super("Dark Roast");
+   public darkRoast() {
+        description="DarkRoast";
     }
+
 
     @Override
     public double cost() {

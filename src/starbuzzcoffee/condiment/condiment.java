@@ -13,8 +13,10 @@ import starbuzzcoffee.Beverages.beverage;
  */
 public abstract class condiment extends beverage{
     
-    public condiment(String description) {
-        super(description);
-    }
+  public beverage beverage;
+  
+	public abstract String getDescription();
+
+	
     
 }

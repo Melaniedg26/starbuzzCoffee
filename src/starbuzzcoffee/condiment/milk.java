@@ -5,19 +5,29 @@
  */
 package starbuzzcoffee.condiment;
 
+import starbuzzcoffee.Beverages.beverage;
+
 /**
  *
  * @author melan
  */
 public class milk extends condiment{
 
-    public milk(String description) {
-        super("Milk");
+    public milk(beverage beverage) {
+		this.beverage = beverage;
+	}
+    
+    @Override
+    public String getDescription() {
+        return beverage.getDescription() + ", Milk";
+
     }
 
     @Override
     public double cost() {
-        return 3.00;
+    double cost = beverage.cost();
+    return cost + 3.00;
     }
+
     
 }

@@ -13,9 +13,10 @@ import starbuzzcoffee.Beverages.beverage;
  */
 public class houseBlend extends beverage {
     
-    public houseBlend(String description) {
-        super("House Blend");
+ public houseBlend() {
+        description="HouseBlend";
     }
+
 
     @Override
     public double cost() {

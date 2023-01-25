@@ -11,15 +11,14 @@ import starbuzzcoffee.Beverages.beverage;
  *
  * @author melan
  */
-public class chocolate extends condiment{
-
-    public chocolate(beverage beverage) {
+public class brownSugar extends condiment {
+    public brownSugar(beverage beverage) {
 		this.beverage = beverage;
 	}
     
     @Override
     public String getDescription() {
-        return beverage.getDescription() + ", Chocolate";
+        return beverage.getDescription() + ", Brown Sugar";
 
     }
 
@@ -29,6 +28,4 @@ public class chocolate extends condiment{
     return cost + 5.00;
     }
 
-
-    
 }

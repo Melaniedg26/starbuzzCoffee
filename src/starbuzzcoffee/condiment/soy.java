@@ -5,19 +5,30 @@
  */
 package starbuzzcoffee.condiment;
 
+import starbuzzcoffee.Beverages.beverage;
+
 /**
  *
  * @author melan
  */
 public class soy extends condiment{
 
-    public soy(String description) {
-        super("Soy");
+  
+    public soy(beverage beverage) {
+		this.beverage = beverage;
+	}
+    
+    @Override
+    public String getDescription() {
+        return beverage.getDescription() + ", Soy";
+
     }
 
     @Override
     public double cost() {
-        return 5.00;
+    double cost = beverage.cost();
+    return cost + 5.00;
     }
+
     
 }

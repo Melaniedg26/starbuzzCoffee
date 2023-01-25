@@ -13,8 +13,8 @@ import starbuzzcoffee.Beverages.beverage;
  */
 public class decaf extends beverage {
 
-    public decaf(String description) {
-        super("Decaf");
+    public decaf() {
+        description="Decaf";
     }
 
     @Override

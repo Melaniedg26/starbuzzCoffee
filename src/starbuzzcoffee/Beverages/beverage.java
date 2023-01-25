@@ -10,12 +10,9 @@ package starbuzzcoffee.Beverages;
  * @author melan
  */
 public abstract class beverage {
-    private String description;
+     String description;
 
-    public beverage(String description) {
-        this.description = description;
-    }
-
+ 
     public String getDescription() {
         return description;
     }

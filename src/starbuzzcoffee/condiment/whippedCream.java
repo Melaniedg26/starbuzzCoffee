@@ -5,19 +5,30 @@
  */
 package starbuzzcoffee.condiment;
 
+import starbuzzcoffee.Beverages.beverage;
+
 /**
  *
  * @author melan
  */
 public class whippedCream extends condiment{
 
-    public whippedCream(String description) {
-        super("Whipped Cream");
+   
+    public whippedCream(beverage beverage) {
+		this.beverage = beverage;
+	}
+    
+    @Override
+    public String getDescription() {
+        return beverage.getDescription() + ", WhippedCream";
+
     }
 
     @Override
     public double cost() {
-        return 5.00;
+    double cost = beverage.cost();
+    return cost + 5.00;
     }
+
     
 }
